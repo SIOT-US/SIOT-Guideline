@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>SIOT Creator Hub</title>
 <style>
   :root {
@@ -171,6 +172,21 @@
   .link-card .card-sub { color: rgba(255,255,255,0.55); }
   .link-card .card-arrow { color: rgba(255,255,255,0.45); }
 
+  .drive-card {
+    background: var(--gray-50);
+    border-color: var(--gray-100);
+    color: var(--black);
+  }
+
+  .drive-card:hover {
+    background: var(--gray-100);
+    border-color: var(--gray-300);
+  }
+
+  .drive-card .card-sub { color: var(--gray-500); }
+  .drive-card .card-arrow { color: var(--gray-300); }
+
+
   .back-btn {
     display: inline-flex;
     align-items: center;
@@ -197,198 +213,244 @@
 </style>
 </head>
 <body>
-
 <div class="header">
-  <div class="brand">SIOT</div>
-  <div class="tagline">Creator Support</div>
+<div class="brand">SIOT</div>
+<div class="tagline">Creator Support</div>
 </div>
-
 <div class="screen active" id="screen-products">
-  <h1 class="screen-title">Which guideline <em>do you need?</em></h1>
-  <div class="card-grid">
-    <button class="card link-card" onclick="go('screen-rice-campaigns')">
-      <div class="card-emoji">🍚</div>
-      <div class="card-body">
-        <div class="card-title">Rice Jam Mask</div>
-        <div class="card-sub">Choose content type</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-
-    <button class="card link-card" onclick="go('screen-herbal-campaigns')">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap</div>
-        <div class="card-sub">Choose content type</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-  </div>
+<h1 class="screen-title">Which guideline <em>do you need?</em></h1>
+<div class="card-grid">
+<button class="card link-card" onclick="go('screen-rice-campaigns')">
+<div class="card-emoji">🍚</div>
+<div class="card-body">
+<div class="card-title">Rice Jam Mask</div>
+<div class="card-sub">Choose content type</div>
 </div>
+<div class="card-arrow">›</div>
+</button>
+<button class="card link-card" onclick="go('screen-herbal-campaigns')">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap</div>
+<div class="card-sub">Choose content type</div>
+</div>
+<div class="card-arrow">›</div>
+</button>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-rice-campaigns">
-  <button class="back-btn" onclick="go('screen-products')">← Back to products</button>
-  <h1 class="product-title">🍚 Rice Jam Mask</h1>
-  <div class="screen-subtitle">Create More Videos.</div>
-  <div class="card-grid">
-    <button class="card" onclick="go('screen-rice-nontalking')">
-      <div class="card-emoji">🎬</div>
-      <div class="card-body">
-        <div class="card-title">Non Talking</div>
-        <div class="card-sub">3 guidelines</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-
-    <button class="card" onclick="go('screen-rice-talking')">
-      <div class="card-emoji">🎙️</div>
-      <div class="card-body">
-        <div class="card-title">Talking</div>
-        <div class="card-sub">1 guideline</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-  </div>
+<button class="back-btn" onclick="go('screen-products')">← Back to products</button>
+<h1 class="product-title">🍚 Rice Jam Mask</h1>
+<div class="screen-subtitle">Create More Videos.</div>
+<div class="card-grid">
+<button class="card" onclick="go('screen-rice-nontalking')">
+<div class="card-emoji">🎬</div>
+<div class="card-body">
+<div class="card-title">Non Talking</div>
+<div class="card-sub">3 guidelines</div>
 </div>
+<div class="card-arrow">›</div>
+</button>
+<button class="card" onclick="go('screen-rice-talking')">
+<div class="card-emoji">🎙️</div>
+<div class="card-body">
+<div class="card-title">Talking</div>
+<div class="card-sub">1 guideline</div>
+</div>
+<div class="card-arrow">›</div>
+</button>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-herbal-campaigns">
-  <button class="back-btn" onclick="go('screen-products')">← Back to products</button>
-  <h1 class="product-title">🌿 Herbal Mucin Soap</h1>
-  <div class="screen-subtitle">Create More Videos.</div>
-  <div class="card-grid">
-    <button class="card" onclick="go('screen-herbal-nontalking')">
-      <div class="card-emoji">🎬</div>
-      <div class="card-body">
-        <div class="card-title">Non Talking</div>
-        <div class="card-sub">2 guidelines</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-
-    <button class="card" onclick="go('screen-herbal-talking')">
-      <div class="card-emoji">🎙️</div>
-      <div class="card-body">
-        <div class="card-title">Talking</div>
-        <div class="card-sub">3 guidelines</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </button>
-  </div>
+<button class="back-btn" onclick="go('screen-products')">← Back to products</button>
+<h1 class="product-title">🌿 Herbal Mucin Soap</h1>
+<div class="screen-subtitle">Create More Videos.</div>
+<div class="card-grid">
+<button class="card" onclick="go('screen-herbal-nontalking')">
+<div class="card-emoji">🎬</div>
+<div class="card-body">
+<div class="card-title">Non Talking</div>
+<div class="card-sub">2 guidelines</div>
 </div>
+<div class="card-arrow">›</div>
+</button>
+<button class="card" onclick="go('screen-herbal-talking')">
+<div class="card-emoji">🎙️</div>
+<div class="card-body">
+<div class="card-title">Talking</div>
+<div class="card-sub">3 guidelines</div>
+</div>
+<div class="card-arrow">›</div>
+</button>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-rice-nontalking">
-  <button class="back-btn" onclick="go('screen-rice-campaigns')">← Back to Rice Jam Mask</button>
-  <h1 class="product-title">🎬 Non Talking</h1>
-  <div class="screen-subtitle">Rice Jam Mask</div>
-  <p class="helper-text">Choose a guideline below.</p>
-  <div class="card-grid">
-    <a class="card link-card" href="https://cruva.com/fw?id=nwph7l" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🍚</div>
-      <div class="card-body">
-        <div class="card-title">Rice Jam Mask 01</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-
-    <a class="card link-card" href="https://cruva.com/fw?id=syffcr" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🍚</div>
-      <div class="card-body">
-        <div class="card-title">Rice Jam Mask 02</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-
-    <a class="card link-card" href="https://cruva.com/fw?id=vfncu6" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🍚</div>
-      <div class="card-body">
-        <div class="card-title">Rice Jam Mask 03</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-  </div>
+<button class="back-btn" onclick="go('screen-rice-campaigns')">← Back to Rice Jam Mask</button>
+<h1 class="product-title">🎬 Non Talking</h1>
+<div class="screen-subtitle">Rice Jam Mask</div>
+<p class="helper-text">Choose a guideline below.</p>
+<div class="card-grid">
+<a class="card link-card" href="https://cruva.com/fw?id=nwph7l" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🍚</div>
+<div class="card-body">
+<div class="card-title">Rice Jam Mask 01</div>
+<div class="card-sub">cruva.com</div>
 </div>
+<div class="card-arrow">↗</div>
+</a>
+<a class="card link-card" href="https://cruva.com/fw?id=syffcr" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🍚</div>
+<div class="card-body">
+<div class="card-title">Rice Jam Mask 02</div>
+<div class="card-sub">cruva.com</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+<a class="card link-card" href="https://cruva.com/fw?id=vfncu6" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🍚</div>
+<div class="card-body">
+<div class="card-title">Rice Jam Mask 03</div>
+<div class="card-sub">cruva.com</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-rice-talking">
-  <button class="back-btn" onclick="go('screen-rice-campaigns')">← Back to Rice Jam Mask</button>
-  <h1 class="product-title">🎙️ Talking</h1>
-  <div class="screen-subtitle">Rice Jam Mask</div>
-  <p class="helper-text">Choose a guideline below.</p>
-  <div class="card-grid">
-    <a class="card link-card" href="https://cruva.com/fw?id=ux5esj" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🍚</div>
-      <div class="card-body">
-        <div class="card-title">Rice Jam Mask Talking</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-  </div>
+<button class="back-btn" onclick="go('screen-rice-campaigns')">← Back to Rice Jam Mask</button>
+<h1 class="product-title">🎙️ Talking</h1>
+<div class="screen-subtitle">Rice Jam Mask</div>
+<p class="helper-text">Choose a guideline below.</p>
+<div class="card-grid">
+<a class="card link-card" href="https://cruva.com/fw?id=ux5esj" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🍚</div>
+<div class="card-body">
+<div class="card-title">Rice Jam Mask Talking</div>
+<div class="card-sub">cruva.com</div>
 </div>
+<div class="card-arrow">↗</div>
+</a>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-herbal-nontalking">
-  <button class="back-btn" onclick="go('screen-herbal-campaigns')">← Back to Herbal Mucin Soap</button>
-  <h1 class="product-title">🎬 Non Talking</h1>
-  <div class="screen-subtitle">Herbal Mucin Soap</div>
-  <p class="helper-text">Choose a guideline below.</p>
-  <div class="card-grid">
-    <a class="card link-card" href="https://cruva.com/fw?id=gr2hzk" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap 01</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-
-    <a class="card link-card" href="https://cruva.com/fw?id=mrsapl" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap 02</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-  </div>
+<button class="back-btn" onclick="go('screen-herbal-campaigns')">← Back to Herbal Mucin Soap</button>
+<h1 class="product-title">🎬 Non Talking</h1>
+<div class="screen-subtitle">Herbal Mucin Soap</div>
+<p class="helper-text">Choose a guideline below.</p>
+<div class="card-grid">
+<a class="card link-card" href="https://cruva.com/fw?id=gr2hzk" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap 01</div>
+<div class="card-sub">cruva.com</div>
 </div>
+<div class="card-arrow">↗</div>
+</a>
+<a class="card link-card" href="https://cruva.com/fw?id=mrsapl" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap 02</div>
+<div class="card-sub">cruva.com</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <div class="screen" id="screen-herbal-talking">
-  <button class="back-btn" onclick="go('screen-herbal-campaigns')">← Back to Herbal Mucin Soap</button>
-  <h1 class="product-title">🎙️ Talking</h1>
-  <div class="screen-subtitle">Herbal Mucin Soap</div>
-  <p class="helper-text">Choose a guideline below.</p>
-  <div class="card-grid">
-    <a class="card link-card" href="https://cruva.com/fw?id=dfqkru" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap 01</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-
-    <a class="card link-card" href="https://cruva.com/fw?id=h1zklu" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap 02</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-
-    <a class="card link-card" href="https://cruva.com/fw?id=9pzujd" target="_blank" rel="noopener noreferrer">
-      <div class="card-emoji">🌿</div>
-      <div class="card-body">
-        <div class="card-title">Herbal Mucin Soap 03</div>
-        <div class="card-sub">cruva.com</div>
-      </div>
-      <div class="card-arrow">↗</div>
-    </a>
-  </div>
+<button class="back-btn" onclick="go('screen-herbal-campaigns')">← Back to Herbal Mucin Soap</button>
+<h1 class="product-title">🎙️ Talking</h1>
+<div class="screen-subtitle">Herbal Mucin Soap</div>
+<p class="helper-text">Choose a guideline below.</p>
+<div class="card-grid">
+<a class="card link-card" href="https://cruva.com/fw?id=dfqkru" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap 01</div>
+<div class="card-sub">cruva.com</div>
 </div>
+<div class="card-arrow">↗</div>
+</a>
+<a class="card link-card" href="https://cruva.com/fw?id=h1zklu" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap 02</div>
+<div class="card-sub">cruva.com</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+<a class="card link-card" href="https://cruva.com/fw?id=9pzujd" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">🌿</div>
+<div class="card-body">
+<div class="card-title">Herbal Mucin Soap 03</div>
+<div class="card-sub">cruva.com</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
 
+<a class="card drive-card" href="https://drive.google.com/drive/folders/1_xdf2Mv67z1qxodBVpIsS3yAlQAKl62v?usp=sharing" rel="noopener noreferrer" target="_blank">
+<div class="card-emoji">📁</div>
+<div class="card-body">
+<div class="card-title">Shared Drive</div>
+<div class="card-sub">Assets &amp; Campaign Resources</div>
+</div>
+<div class="card-arrow">↗</div>
+</a>
+</div>
+</div>
 <script>
   function go(screenId) {
     document.querySelectorAll('.screen').forEach(screen => screen.classList.remove('active'));
